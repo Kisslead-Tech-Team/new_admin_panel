@@ -1,0 +1,91 @@
+CRITICAL - 2024-10-07 17:26:19 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:26:20 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:26:22 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:26:37 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:28:03 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:28:48 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:29:46 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 99.
+ 1 APPPATH\Controllers\Workflow_Product.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:30:52 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 110.
+ 1 APPPATH\Controllers\Workflow_Product.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 110)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:31:25 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 112.
+ 1 APPPATH\Controllers\Workflow_Product.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:31:43 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Product.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:31:55 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Product.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:32:02 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Product.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-07 17:32:16 --> ErrorException: Undefined array key "category"
+in APPPATH\Controllers\Workflow_Product.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Product.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

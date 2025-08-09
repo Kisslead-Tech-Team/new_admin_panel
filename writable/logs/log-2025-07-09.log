@@ -1,0 +1,3 @@
+CRITICAL - 2025-07-09 16:26:53 --> ErrorException: Trait "App\Controllers\CodeIgniter\HTTP\RequestInterface" not found
+in APPPATH\Controllers\BaseController.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

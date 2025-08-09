@@ -1,0 +1,108 @@
+CRITICAL - 2025-07-01 17:57:12 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:13 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:14 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:14 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:15 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:20 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:21 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:55 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:55 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:56 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:57:56 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:58:08 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:58:11 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 17:58:13 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 18:07:44 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 18:07:45 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 18:07:46 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-01 18:07:46 --> Error: Class "App\Models\PetPlanDetailsModel" not found
+in APPPATH\Controllers\Workflow_PetPlanDetails.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->insertPetPlanDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

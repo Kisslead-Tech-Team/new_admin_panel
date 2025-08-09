@@ -1,0 +1,48 @@
+CRITICAL - 2024-10-10 17:11:42 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:12:13 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:12:29 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:16:53 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:17:32 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:18:32 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:19:13 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-10 17:19:20 --> Error: Class "App\Models\ProductImageModel" not found
+in APPPATH\Controllers\Workflow_Product_Image.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product_Image->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

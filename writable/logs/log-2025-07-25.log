@@ -1,0 +1,35 @@
+CRITICAL - 2025-07-25 16:14:10 --> ErrorException: Undefined variable $SupportModel
+in APPPATH\Controllers\Workflow_Support.php on line 19.
+ 1 APPPATH\Controllers\Workflow_Support.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Support->getSupport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-25 16:14:13 --> ErrorException: Undefined variable $SupportModel
+in APPPATH\Controllers\Workflow_Support.php on line 19.
+ 1 APPPATH\Controllers\Workflow_Support.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Support->getSupport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-25 16:14:21 --> ErrorException: Undefined variable $SupportModel
+in APPPATH\Controllers\Workflow_Support.php on line 19.
+ 1 APPPATH\Controllers\Workflow_Support.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Support->getSupport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-25 16:14:23 --> ErrorException: Undefined variable $SupportModel
+in APPPATH\Controllers\Workflow_Support.php on line 19.
+ 1 APPPATH\Controllers\Workflow_Support.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Support->getSupport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-25 16:14:30 --> ErrorException: Undefined variable $SupportModel
+in APPPATH\Controllers\Workflow_Support.php on line 19.
+ 1 APPPATH\Controllers\Workflow_Support.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Support->getSupport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

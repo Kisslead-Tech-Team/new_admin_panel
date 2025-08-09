@@ -1,0 +1,451 @@
+ERROR - 2024-12-02 16:13:16 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:13:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:13:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:13:16 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:13:16 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:13:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:13:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:13:16 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:31:55 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:31:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:31:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:31:55 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:31:55 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:31:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:31:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:31:55 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:32:27 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:32:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:32:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:32:27 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:32:27 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:32:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:32:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:32:27 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:38:14 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:38:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:14 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:38:14 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:38:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:14 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:38:19 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:38:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:19 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_details_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:38:19 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:38:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:19 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-02 16:38:39 --> mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist in C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\admin\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\admin\app\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+#6 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 C:\xampp\htdocs\projects\Petz24\admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\xampp\htdocs\projects\Petz24\admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-12-02 16:38:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-02 16:38:39 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.pet_plan_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\Workflow_PetPlan.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->getpetplan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

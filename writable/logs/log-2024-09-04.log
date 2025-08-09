@@ -1,0 +1,7 @@
+CRITICAL - 2024-09-04 16:38:30 --> ErrorException: Undefined variable $petCheck
+in APPPATH\Controllers\Workflow_Pet.php on line 102.
+ 1 APPPATH\Controllers\Workflow_Pet.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $petCheck', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Pet.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->updatePet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,50 @@
+CRITICAL - 2024-06-17 17:12:35 --> ErrorException: Cannot declare class App\Controllers\Product because the name is already in use
+in APPPATH\Controllers\Product.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-17 17:15:09 --> Error: Class 'App\Models\ProductModel' not found
+in APPPATH\Controllers\Product.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 17:19:22 --> Error: Class 'App\Models\ProductModel' not found
+in APPPATH\Controllers\Product.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 17:21:24 --> Error: Class 'App\Models\ProductModel' not found
+in APPPATH\Controllers\Product.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 17:23:09 --> Error: Class 'app\Models\ProductModel' not found
+in APPPATH\Controllers\Product.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 17:25:00 --> Error: Class 'app\Models\ProductModel' not found
+in APPPATH\Controllers\Product.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 17:25:34 --> Error: Class 'app\Controllers\BaseController' not found
+in APPPATH\Controllers\Product.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\crm\\app\\Controllers\\Product.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Product')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Product')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Product')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Product', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 17:25:55 --> Error: Class 'app\Models\ProductModel' not found
+in APPPATH\Controllers\Product.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

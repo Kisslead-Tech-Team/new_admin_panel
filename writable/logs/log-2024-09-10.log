@@ -1,0 +1,82 @@
+ERROR - 2024-09-10 05:22:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'petz24_db', 3306, '', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Pet.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Pet->getPet()
+#8 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+#9 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\projects\petzadmin\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\projects\petzadmin\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Pet.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Pet->getPet()
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+#8 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-10 05:22:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pet_tbl`
+WHERE `flag` = :flag:', [...], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Workflow_Pet.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->getPet()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-10 06:04:03 --> ErrorException: Undefined array key "tyoe"
+in APPPATH\Controllers\Workflow_Product_Type.php on line 50.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tyoe"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-10 06:04:03 --> ErrorException: Undefined array key "tyoe"
+in APPPATH\Controllers\Workflow_Product_Type.php on line 50.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tyoe"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-10 06:14:36 --> ErrorException: Undefined variable $petModel
+in APPPATH\Controllers\Workflow_Product_Type.php on line 81.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $petModel', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-10 06:44:10 --> ErrorException: Undefined variable $pet_type_check
+in APPPATH\Controllers\Workflow_Breed.php on line 89.
+ 1 APPPATH\Controllers\Workflow_Breed.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pet_type_check', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Breed.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Breed->updateBreed()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Breed))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-10 12:10:28 --> Error: Class "App\Controllers\ProductModel" not found
+in APPPATH\Controllers\Workflow_Product.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-10 12:12:13 --> Error: Class "App\Controllers\ProductModel" not found
+in APPPATH\Controllers\Workflow_Product.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

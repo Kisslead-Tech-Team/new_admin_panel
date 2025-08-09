@@ -1,0 +1,239 @@
+CRITICAL - 2024-10-16 07:57:26 --> Error: Class 'App\Controllers\PetPlanModel' not found
+in APPPATH\Controllers\Workflow_PetPlan.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->insertPetPlan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 07:58:59 --> Error: Class 'App\Controllers\PetPlanModel' not found
+in APPPATH\Controllers\Workflow_PetPlan.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->insertPetPlan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 07:59:39 --> Error: Class 'App\Controllers\PetPlanModel' not found
+in APPPATH\Controllers\Workflow_PetPlan.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->insertPetPlan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 08:00:01 --> Error: Class 'App\Controllers\PetPlanModel' not found
+in APPPATH\Controllers\Workflow_PetPlan.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->insertPetPlan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 08:58:06 --> Error: Call to a member function save() on null
+in APPPATH\Controllers\Workflow_PetPlan.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->deletePetPlan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 09:01:37 --> Error: Call to a member function save() on null
+in APPPATH\Controllers\Workflow_PetPlan.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlan->deletePetPlan()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-16 12:23:41 --> mysqli_sql_exception: Unknown column 'pet_tbl.plan_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pet_pla...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pet_pla...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pet_pla...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_pla...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-16 12:23:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_tbl.plan_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 12:23:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_tbl.plan_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 12:23:41 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_tbl.plan_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-16 12:25:27 --> mysqli_sql_exception: Unknown column 'pet_tbl.plan_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pet_pla...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pet_pla...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pet_pla...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_pla...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-16 12:25:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_tbl.plan_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 12:25:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_tbl.plan_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 12:25:27 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_tbl.plan_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pet_plan_details_tbl`.*, `pet_plan_tbl`.`plan_name`, `pet_tbl`.`pet_name`
+FROM `pet_plan_details_tbl`
+JOIN `pet_plan_tbl` ON `pet_tbl`.`plan_id` = `pet_plan_details_tbl`.`plan_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `pet_plan_tbl`.`pet_id`
+WHERE `pet_plan_details_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_PetPlanDetails.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->getpetplanDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-16 13:04:05 --> mysqli_sql_exception: Column 'plan_id' cannot be null in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\petzadmin\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\petzadmin\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\projects\petzadmin\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_PetPlanDetails.php(91): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->deletePetPlanDetails()
+#10 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+#11 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-10-16 13:04:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'plan_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (:plan_id:, :flag:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Workflow_PetPlanDetails.php(91): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->deletePetPlanDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 13:04:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'plan_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (:plan_id:, :flag:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Workflow_PetPlanDetails.php(91): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->deletePetPlanDetails()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-16 13:04:05 --> [Caused by] mysqli_sql_exception: Column 'plan_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pet_plan_details_tbl` (`plan_id`, `flag`) VALUES (:plan_id:, :flag:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Workflow_PetPlanDetails.php(91): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_PetPlanDetails->deletePetPlanDetails()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_PetPlanDetails))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

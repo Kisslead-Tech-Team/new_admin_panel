@@ -1,0 +1,19 @@
+CRITICAL - 2024-08-11 09:16:57 --> Error: Call to a member function count() on array
+in APPPATH\Controllers\Workflow_User.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_User->getUserCount()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-11 09:17:56 --> BadMethodCallException: Call to undefined method App\Models\UserModel::countString
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Workflow_User.php(11): CodeIgniter\Model->__call('countString', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_User->getUserCount()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-11 09:25:04 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH\Controllers\Workflow_User.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_User->getUserCount()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

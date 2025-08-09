@@ -1,0 +1,64 @@
+CRITICAL - 2024-12-09 16:22:59 --> ErrorException: Undefined array key "clinic_id"
+in APPPATH\Controllers\Workflow_Booking.php on line 110.
+ 1 APPPATH\Controllers\Workflow_Booking.php(110): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:28:49 --> ErrorException: Undefined array key "clinic_id"
+in APPPATH\Controllers\Workflow_Booking.php on line 109.
+ 1 APPPATH\Controllers\Workflow_Booking.php(109): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:29:21 --> ErrorException: Undefined array key "clinic_id"
+in APPPATH\Controllers\Workflow_Booking.php on line 107.
+ 1 APPPATH\Controllers\Workflow_Booking.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:29:42 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Workflow_Booking.php(110): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:30:54 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Workflow_Booking.php(110): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:34:12 --> ErrorException: Undefined variable $allowedColumns
+in APPPATH\Controllers\Workflow_Booking.php on line 111.
+ 1 APPPATH\Controllers\Workflow_Booking.php(111): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:35:13 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Workflow_Booking.php(127): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 16:38:14 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 970.
+ 1 SYSTEMPATH\BaseModel.php(970): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Workflow_Booking.php(119): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Booking->updateBooking()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

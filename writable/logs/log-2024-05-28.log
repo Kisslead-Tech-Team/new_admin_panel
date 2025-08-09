@@ -1,0 +1,264 @@
+CRITICAL - 2024-05-28 13:42:55 --> Error: Class 'App\Controllers\AccessModel' not found
+in APPPATH\Controllers\Navbar.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->navbartitleedit()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 13:44:31 --> Error: Class 'App\Controllers\AccessModel' not found
+in APPPATH\Controllers\Navbar.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->navbartitleedit()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 13:50:47 --> TypeError: Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, null given, called in C:\xampp\htdocs\projects\crm\app\Controllers\Navbar.php on line 35
+in SYSTEMPATH\Database\BaseConnection.php on line 570.
+ 1 APPPATH\Controllers\Navbar.php(35): CodeIgniter\Database\BaseConnection->query(null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->navbartitleedit()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:07:20 --> TypeError: Return value of App\Controllers\Navbar::title() must be of the type string, object returned
+in APPPATH\Controllers\Navbar.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->title()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:11:47 --> TypeError: Return value of App\Controllers\Navbar::title() must be of the type string, object returned
+in APPPATH\Controllers\Navbar.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->title()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:12:15 --> TypeError: Return value of App\Controllers\Navbar::title() must be of the type string, object returned
+in APPPATH\Controllers\Navbar.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->title()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:12:16 --> TypeError: Return value of App\Controllers\Navbar::title() must be of the type string, object returned
+in APPPATH\Controllers\Navbar.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->title()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:13:18 --> TypeError: Return value of App\Controllers\Navbar::title() must be of the type string, object returned
+in APPPATH\Controllers\Navbar.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->title()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:13:18 --> TypeError: Return value of App\Controllers\Navbar::title() must be of the type string, object returned
+in APPPATH\Controllers\Navbar.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->title()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:25:24 --> ErrorException: Invalid argument supplied for foreach()
+in APPPATH\Views\pages.php on line 94.
+ 1 APPPATH\Views\pages.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\projects\\crm\\app\\Views\\pages.php', 94, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\crm\\app\\Views\\pages.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages', [], true)
+ 5 APPPATH\Controllers\Navbar.php(23): view('pages')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->pages()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:27:29 --> Error: Call to a member function query() on null
+in APPPATH\Controllers\Navbar.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->pages()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:27:42 --> Error: Call to a member function query() on null
+in APPPATH\Controllers\Navbar.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->pages()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:28:36 --> Error: Call to a member function query() on null
+in APPPATH\Controllers\Navbar.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->pages()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:28:59 --> Error: Call to a member function query() on null
+in APPPATH\Controllers\Navbar.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->pages()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:29:00 --> Error: Call to a member function query() on null
+in APPPATH\Controllers\Navbar.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->pages()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-28 15:43:57 --> mysqli_sql_exception: Unknown column 'A.flag' in 'where clause' in C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\projects\crm\app\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+#5 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+#6 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\crm\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-05-28 15:43:58 --> mysqli_sql_exception: Unknown column 'A.flag' in 'where clause' in C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\projects\crm\app\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+#5 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+#6 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\crm\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-05-28 15:43:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:43:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:43:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 3 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:43:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 3 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:43:58 --> [Caused by] mysqli_sql_exception: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 4 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:43:58 --> [Caused by] mysqli_sql_exception: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 4 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` =1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-28 15:44:51 --> mysqli_sql_exception: Unknown column 'A.flag' in 'where clause' in C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\projects\crm\app\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+#5 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+#6 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\crm\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-05-28 15:44:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:44:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 3 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:44:51 --> [Caused by] mysqli_sql_exception: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 4 APPPATH\Controllers\Navbar.php(85): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-28 15:46:34 --> mysqli_sql_exception: Unknown column 'A.flag' in 'where clause' in C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\projects\crm\app\Controllers\Navbar.php(87): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+#5 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+#6 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\crm\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-05-28 15:46:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Navbar.php(87): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:46:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 3 APPPATH\Controllers\Navbar.php(87): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 15:46:34 --> [Caused by] mysqli_sql_exception: Unknown column 'A.flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 4 APPPATH\Controllers\Navbar.php(87): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tbl_navbar_pages` AS A INNER JOIN `tbl_navbar_title` AS B ON B.navbar_title_id = A.navbar_title_id WHERE `A.flag` = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->getpages()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 16:01:34 --> ParseError: syntax error, unexpected '}', expecting end of file
+in APPPATH\Controllers\Navbar.php on line 121.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\crm\\app\\Controllers\\Navbar.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Navbar')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Navbar')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Navbar')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Navbar', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-28 16:01:49 --> ParseError: syntax error, unexpected '}', expecting end of file
+in APPPATH\Controllers\Navbar.php on line 121.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\crm\\app\\Controllers\\Navbar.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Navbar')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Navbar')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Navbar')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Navbar', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

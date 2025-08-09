@@ -1,0 +1,695 @@
+CRITICAL - 2024-08-28 08:08:20 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:08:41 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:08:45 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:09:44 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:11:10 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:12:19 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:26:33 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-28 08:27:44 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:39:01 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:42:18 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Type.php(64): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:44:44 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(67): App\Controllers\BaseController->response_message(200, 'Product Type inserted successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 08:46:09 --> Error: Call to undefined function App\Controllers\insert()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->insertProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:31:15 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(97): App\Controllers\BaseController->response_message(200, 'Product Type updated successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:31:59 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(97): App\Controllers\BaseController->response_message(200, 'Product Type updated successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:32:45 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(97): App\Controllers\BaseController->response_message(200, 'Product Type updated successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:34:20 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(91): App\Controllers\BaseController->response_message(200, 'Product Type updated successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:45:35 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(86): App\Controllers\BaseController->response_message(400, 'Product Type already exist!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:46:12 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(86): App\Controllers\BaseController->response_message(400, 'Product Type already exist!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:46:49 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(86): App\Controllers\BaseController->response_message(400, 'Product Type already exist!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:48:03 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(86): App\Controllers\BaseController->response_message(400, 'Product Type already exist!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:48:41 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(86): App\Controllers\BaseController->response_message(400, 'Product Type already exist!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:50:43 --> ErrorException: Undefined variable $update
+in APPPATH\Controllers\Workflow_Product_Type.php on line 86.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $update', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:58:13 --> ErrorException: Undefined array key "product_type_id"
+in APPPATH\Controllers\Workflow_Product_Type.php on line 81.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_type_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:58:59 --> ErrorException: Undefined array key "product_type_id"
+in APPPATH\Controllers\Workflow_Product_Type.php on line 81.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_type_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 10:59:19 --> ErrorException: Undefined array key "product_type_id"
+in APPPATH\Controllers\Workflow_Product_Type.php on line 81.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_type_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->updateProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 11:03:18 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(126): App\Controllers\BaseController->response_message(200, 'Product Type deleted successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->deleteProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 11:06:26 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(134): App\Controllers\BaseController->response_message(200, 'Product Type deleted successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->deleteProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 11:07:45 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(133): App\Controllers\BaseController->response_message(200, 'Product Type deleted successfully!')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->deleteProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:35:21 --> ErrorException: Undefined variable $response
+in APPPATH\Controllers\Workflow_Product_Category.php on line 23.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-28 15:54:25 --> mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-28 15:54:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:54:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:54:25 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-28 15:54:39 --> mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-28 15:54:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:54:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:54:39 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_type_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-28 15:55:00 --> mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-28 15:55:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:55:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:55:00 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-28 15:55:16 --> mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-28 15:55:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:55:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:55:16 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-28 15:55:28 --> mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause' in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-28 15:55:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:55:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 15:55:28 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.pet_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`pet_id`
+WHERE `product_category_tbl`.`flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Category.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->getProductCategory()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:06:12 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:06:37 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:06:39 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:07:24 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:09:07 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:09:19 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:10:07 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:19:18 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 76.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:30:43 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Category.php(62): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->insertProductCategory()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:33:40 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], false)
+ 3 APPPATH\Controllers\Workflow_Product_Category.php(56): CodeIgniter\Model->insert([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->insertProductCategory()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:40:07 --> ParseError: syntax error, unexpected token "\"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Product_Category')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Product_Category')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Product_Category', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:40:15 --> ParseError: syntax error, unexpected token "\"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Product_Category')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Product_Category')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Product_Category', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:44:55 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:45:00 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:45:03 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:45:08 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:45:12 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:45:16 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 16:57:39 --> ErrorException: Undefined array key "product_category_id"
+in APPPATH\Controllers\Workflow_Product_Category.php on line 74.
+ 1 APPPATH\Controllers\Workflow_Product_Category.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_category_id"', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Category.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Category->updateProductCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,1447 @@
+CRITICAL - 2024-08-27 05:35:04 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:47:17 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:47:22 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:47:29 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:49:28 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:49:37 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:50:19 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:50:24 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-08-27 05:50:38 --> ErrorException: Access level to App\Controllers\Workflow_Product_Type::$db must be protected (as in class App\Controllers\BaseController) or weaker
+in APPPATH\Controllers\Workflow_Product_Type.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-08-27 05:51:11 --> mysqli_sql_exception: Table 'petz24_db.prt_tbl' doesn't exist in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 05:51:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.prt_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 05:51:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.prt_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 05:51:12 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.prt_tbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `prt_tbl` ON `prt_tbl`.`pet_id` = `product_type_tbl`.`pet_id`', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 06:16:18 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$mysqli_result
+in APPPATH\Controllers\Workflow_Product_Type.php on line 30.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$mysqli_result', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 06:34:44 --> ErrorException: Undefined variable $db
+in APPPATH\Controllers\Workflow_Product_Type.php on line 29.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 06:34:48 --> ErrorException: Undefined variable $db
+in APPPATH\Controllers\Workflow_Product_Type.php on line 29.
+ 1 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Product_Type.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 06:40:33 --> Error: Call to undefined method CodeIgniter\Database\Query::getResult()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:25:39 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:25:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:25:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:25:39 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:25:55 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:25:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:25:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:25:55 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:26:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 4 in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:26:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:26:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:26:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE 0 = :0:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(27): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:27:50 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:28:56 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:29:00 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:29:21 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:30:01 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:30:04 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Controllers\Workflow_Product_Type.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:31:35 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:31:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:31:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:31:35 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:31:41 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:31:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:31:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:31:41 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:31:58 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:31:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:31:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:31:58 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:32:00 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:32:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:32:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:32:00 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:07 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:07 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:12 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:12 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:49 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:49 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:50 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:50 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:50 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:50 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:50 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:50 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:51 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:51 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:33:51 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:33:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:33:51 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:37:11 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:37:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:37:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:37:11 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:37:58 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:37:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:37:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:37:58 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:39:49 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:39:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:39:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:39:49 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:39:52 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:39:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:39:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:39:52 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = :flag:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-27 07:43:19 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petzadmin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petzadmin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+#6 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+#7 C:\xampp\htdocs\projects\petzadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petzadmin\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-27 07:43:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', [], false)
+ 2 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:43:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', [], false)
+ 4 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-27 07:43:19 --> [Caused by] mysqli_sql_exception: Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_type_tbl`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `flag` = 1', [], false)
+ 5 APPPATH\Controllers\Workflow_Product_Type.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product_Type->getProductType()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product_Type))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

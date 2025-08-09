@@ -1,0 +1,43 @@
+CRITICAL - 2024-05-30 14:31:12 --> Error: Call to a member function query() on null
+in APPPATH\Controllers\Navbar.php on line 257.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->updatepages()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-30 14:34:12 --> mysqli_sql_exception: Unknown column 'navbar_pages' in 'field list' in C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\crm\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_nav...', 0)
+#1 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_nav...')
+#2 C:\xampp\htdocs\projects\crm\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_nav...')
+#3 C:\xampp\htdocs\projects\crm\app\Controllers\Navbar.php(261): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nav...', Array)
+#4 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(941): App\Controllers\Navbar->updatepages()
+#5 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+#6 C:\xampp\htdocs\projects\crm\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\crm\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-05-30 14:34:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'navbar_pages' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Navbar.php(261): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_navbar_pages` SET navbar_title_id = :title: , navbar_pages = :pages: WHERE navbar_pages_id = :navbar_pages_id:', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->updatepages()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 14:34:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'navbar_pages' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_navbar_pages` SET navbar_title_id = \'1\' , navbar_pages = \'page one\' WHERE navbar_pages_id = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_navbar_pages` SET navbar_title_id = \'1\' , navbar_pages = \'page one\' WHERE navbar_pages_id = \'5\'')
+ 3 APPPATH\Controllers\Navbar.php(261): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_navbar_pages` SET navbar_title_id = :title: , navbar_pages = :pages: WHERE navbar_pages_id = :navbar_pages_id:', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->updatepages()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 14:34:12 --> [Caused by] mysqli_sql_exception: Unknown column 'navbar_pages' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_navbar_pages` SET navbar_title_id = \'1\' , navbar_pages = \'page one\' WHERE navbar_pages_id = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_navbar_pages` SET navbar_title_id = \'1\' , navbar_pages = \'page one\' WHERE navbar_pages_id = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_navbar_pages` SET navbar_title_id = \'1\' , navbar_pages = \'page one\' WHERE navbar_pages_id = \'5\'')
+ 4 APPPATH\Controllers\Navbar.php(261): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_navbar_pages` SET navbar_title_id = :title: , navbar_pages = :pages: WHERE navbar_pages_id = :navbar_pages_id:', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Navbar->updatepages()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navbar))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

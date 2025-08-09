@@ -1,0 +1,207 @@
+CRITICAL - 2024-06-26 17:40:37 --> Error: Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:40:47 --> Error: Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:41:02 --> Error: Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:41:31 --> Error: Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:41:54 --> Error: Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::name()
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:42:33 --> Error: Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::path()
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:42:45 --> Error: Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::originalName()
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:43:41 --> TypeError: Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, null given, called in C:\xampp\htdocs\projects\petzadmin\system\Controller.php on line 196
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(196): CodeIgniter\Validation\Validation->setRules(null, [])
+ 2 SYSTEMPATH\Controller.php(165): CodeIgniter\Controller->setValidator(null, [])
+ 3 APPPATH\Controllers\Workflow_Pet.php(73): CodeIgniter\Controller->validateData([], null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:43:58 --> TypeError: Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, null given, called in C:\xampp\htdocs\projects\petzadmin\system\Controller.php on line 196
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(196): CodeIgniter\Validation\Validation->setRules(null, [])
+ 2 SYSTEMPATH\Controller.php(165): CodeIgniter\Controller->setValidator(null, [])
+ 3 APPPATH\Controllers\Workflow_Pet.php(73): CodeIgniter\Controller->validateData([], null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:44:38 --> TypeError: Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, null given, called in C:\xampp\htdocs\projects\petzadmin\system\Controller.php on line 196
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(196): CodeIgniter\Validation\Validation->setRules(null, [])
+ 2 SYSTEMPATH\Controller.php(165): CodeIgniter\Controller->setValidator(null, [])
+ 3 APPPATH\Controllers\Workflow_Pet.php(74): CodeIgniter\Controller->validateData([], null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:44:47 --> ArgumentCountError: Too few arguments to function CodeIgniter\Controller::validateData(), 0 passed in C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Pet.php on line 74 and at least 2 expected
+in SYSTEMPATH\Controller.php on line 163.
+ 1 APPPATH\Controllers\Workflow_Pet.php(74): CodeIgniter\Controller->validateData()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:45:52 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFile(), 0 passed in C:\xampp\htdocs\projects\petzadmin\app\Controllers\Workflow_Pet.php on line 81 and exactly 1 expected
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 926.
+ 1 APPPATH\Controllers\Workflow_Pet.php(81): CodeIgniter\HTTP\IncomingRequest->getFile()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:46:27 --> Error: Call to a member function getErrors() on null
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 17:47:15 --> Error: Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::error()
+in APPPATH\Controllers\Workflow_Pet.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 18:43:05 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\PetModel"
+in SYSTEMPATH\Model.php on line 766.
+ 1 SYSTEMPATH\Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PetModel')
+ 2 SYSTEMPATH\BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 4 APPPATH\Controllers\Workflow_Pet.php(86): CodeIgniter\Model->insert([...], false)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 18:45:33 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\PetModel"
+in SYSTEMPATH\Model.php on line 766.
+ 1 SYSTEMPATH\Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PetModel')
+ 2 SYSTEMPATH\BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 4 APPPATH\Controllers\Workflow_Pet.php(86): CodeIgniter\Model->insert([...], false)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 18:46:05 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\PetModel"
+in SYSTEMPATH\Model.php on line 766.
+ 1 SYSTEMPATH\Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PetModel')
+ 2 SYSTEMPATH\BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 4 APPPATH\Controllers\Workflow_Pet.php(86): CodeIgniter\Model->insert([...], false)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:05:08 --> Error: Call to a member function move() on null
+in APPPATH\Controllers\Workflow_Pet.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:05:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: The uploaded file has already been moved.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 142.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(142): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+ 2 APPPATH\Controllers\Workflow_Pet.php(80): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\projects\\petzadmin\\writable\\public/pet/')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->insertpet()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:17:26 --> ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Workflow_Pet.php on line 136.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Pet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Pet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Pet')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Workflow_Pet')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Pet', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:17:45 --> ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Workflow_Pet.php on line 136.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Pet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Pet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Pet')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Workflow_Pet')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Pet', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:20:03 --> ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Workflow_Pet.php on line 136.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Pet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Pet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Pet')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Workflow_Pet')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Pet', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:21:31 --> ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Workflow_Pet.php on line 136.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Pet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Pet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Pet')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Workflow_Pet')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Pet', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:22:08 --> ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Workflow_Pet.php on line 138.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petzadmin\\app\\Controllers\\Workflow_Pet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Workflow_Pet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Workflow_Pet')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Workflow_Pet')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Workflow_Pet', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:33:19 --> Error: Call to a member function update() on null
+in APPPATH\Controllers\Workflow_Pet.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->updatepet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:50:16 --> Error: Call to a member function update() on null
+in APPPATH\Controllers\Workflow_Pet.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->updatepet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 19:51:39 --> Error: Call to a member function update() on null
+in APPPATH\Controllers\Workflow_Pet.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Pet->updatepet()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Pet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
