@@ -124,3 +124,10 @@
 .row-green td {
   background-color: #d4edda !important; /* light green */
 }
+
+.image-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}

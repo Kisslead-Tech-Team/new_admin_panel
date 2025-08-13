@@ -13,39 +13,72 @@ class Workflow_ToolsBrand extends BaseController
         
     }
 
-    public function getBrand(){
 
-        $brandModel = new ToolsBrandModel;
-        $data = $brandModel->where('flag', 1)->findAll();
 
-        if($data){
-            echo $this->response_message([
-                'code' => 200,
-                'data' => json_encode($data)
-            ]); return;
-        }
 
-        echo $this->response_message(false);
+
+
+public function getBrand()
+{
+    $draw   = (int) ($this->request->getGet('draw') ?? 1);
+    $start  = (int) ($this->request->getGet('start') ?? 0);
+    $length = $this->request->getGet('length'); // don't cast yet, so we can check if null
+    $search = $this->request->getGet('search');
+
+    $brandModel = new ToolsBrandModel();
+    $brandModel->where('flag', 1);
+
+    if (!empty($search)) {
+        $brandModel->groupStart()
+            ->like('brand_name', $search)
+            ->orLike('url', $search)
+            ->groupEnd();
     }
 
-    public function getSpecificBrand(){
+    // Get total filtered records count
+    $totalRecords = $brandModel->countAllResults(false);
 
-        $brandModel = new ToolsBrandModel;
-        $request = \Config\Services::request();
-        $data =  $request->getPost();
+    // Add order by created_at descending
+    $brandModel->orderBy('created_at', 'DESC');
 
-        $response = $brandModel->where('brand_id', $data['brand_id'])->first();
-        
-        if($response){
-            echo $this->response_message([
-                'code' => 200,
-                'data' => json_encode($data)
-            ]);
-        }
-
-        echo $this->response_message(false);
+    // If length is defined and not -1, apply limit, else fetch all
+    if (!empty($length) && (int)$length !== -1) {
+        $rows = $brandModel->findAll((int)$length, $start);
+    } else {
+        $rows = $brandModel->findAll(); // get all brands
     }
 
+    $responseData = [
+        'draw' => $draw,
+        'recordsTotal' => $totalRecords,
+        'recordsFiltered' => $totalRecords,
+        'data' => $rows
+    ];
+
+    echo $this->response_message([
+        'code' => 200,
+        'data' => $responseData
+    ]);
+}
+
+public function getBrandOption()
+{
+    $brandModel = new ToolsBrandModel();
+
+    // Only active brands
+    $brandModel->where('flag', 1);
+
+    // Only select brand_id and brand_name
+    $rows = $brandModel
+        ->select('brand_id, brand_name')
+        ->orderBy('brand_name', 'ASC')
+        ->findAll();
+
+    echo $this->response_message([
+        'code' => 200,
+        'data' => $rows
+    ]);
+}
 
 
 public function insertBrand()
@@ -87,18 +120,18 @@ public function updateBrand()
     $brandModel = new ToolsBrandModel();
     $request = \Config\Services::request();
     $data = $request->getPost();
-    $brand_id = $data['brand_id'];
+
 
     // Check if another brand already has this name (excluding current brand)
     $brand_name_check = $brandModel
-        ->where('brand_id !=', $brand_id)
+        ->where('brand_id !=', $data['brand_id'])
         ->where('url', $data['url'])
         ->where('flag', 1)
         ->first();
 
     if (!$brand_name_check) {
         // Check if brand exists
-        $brand_check = $brandModel->where('brand_id', $brand_id)->first();
+        $brand_check = $brandModel->where('brand_id', $data['brand_id'])->first();
         if ($brand_check) {
             $update = $brandModel->save($data);
             if ($data && $update) {
@@ -128,7 +161,7 @@ public function updateBrand()
 }
 
 
-    public function deleteBrand()
+public function deleteBrand()
 {
     $brandModel = new ToolsBrandModel;
     $request = \Config\Services::request();

@@ -1,0 +1,2004 @@
+ERROR - 2025-08-12 07:15:37 --> mysqli_sql_exception: Column 'tools_brochure' cannot be null in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(137): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#10 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-08-12 07:15:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Workflow_Tools.php(137): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:15:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tool 1\', \'tool-1\', \'some lorrem content\', NULL, 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tool 1\', \'tool-1\', \'some lorrem content\', NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Workflow_Tools.php(137): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:15:37 --> [Caused by] mysqli_sql_exception: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tool 1\', \'tool-1\', \'some lorrem content\', NULL, 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tool 1\', \'tool-1\', \'some lorrem content\', NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tool 1\', \'tool-1\', \'some lorrem content\', NULL, 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Workflow_Tools.php(137): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:20:06 --> mysqli_sql_exception: Column 'tools_brochure' cannot be null in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#10 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-08-12 07:20:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Workflow_Tools.php(138): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:20:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'uyuy\', \'uyuy\', \'ukyhjkhk\', NULL, 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'uyuy\', \'uyuy\', \'ukyhjkhk\', NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Workflow_Tools.php(138): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:20:06 --> [Caused by] mysqli_sql_exception: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'uyuy\', \'uyuy\', \'ukyhjkhk\', NULL, 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'uyuy\', \'uyuy\', \'ukyhjkhk\', NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'uyuy\', \'uyuy\', \'ukyhjkhk\', NULL, 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Workflow_Tools.php(138): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:23:18 --> ErrorException: Undefined array key "tools_brochure"
+in APPPATH\Controllers\Workflow_Tools.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Tools.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tools_brochure"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:24:43 --> ErrorException: Undefined array key "tools_brochure"
+in APPPATH\Controllers\Workflow_Tools.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Tools.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tools_brochure"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:24:45 --> ErrorException: Undefined array key "tools_brochure"
+in APPPATH\Controllers\Workflow_Tools.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Tools.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tools_brochure"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:24:45 --> ErrorException: Undefined array key "tools_brochure"
+in APPPATH\Controllers\Workflow_Tools.php on line 113.
+ 1 APPPATH\Controllers\Workflow_Tools.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tools_brochure"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:25:51 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:25:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:25:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:25:51 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:25:51 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:25:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:25:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:25:51 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:26:08 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:26:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:08 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Laborum.%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Laborum.%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:26:12 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:26:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:12 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:26:12 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:26:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:12 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:26:46 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:26:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:46 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Incidunt,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:26:48 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:26:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:48 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:26:48 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:26:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:48 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:26:53 --> ErrorException: Undefined array key "tools_brochure"
+in APPPATH\Controllers\Workflow_Tools.php on line 118.
+ 1 APPPATH\Controllers\Workflow_Tools.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tools_brochure"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:27:18 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:27:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:27:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:27:18 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consequatur,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:27:21 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:27:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:27:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:27:21 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:27:21 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:27:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:27:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:27:21 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:28:41 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:28:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:41 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Consectetur,%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:28:44 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:28:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:44 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:28:44 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:28:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:44 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:28:53 --> ErrorException: mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\writable\\uploads/tools_pdf/brand_3/category_2/anbu-kumar/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\writable\\uploads/tools_pdf/brand_3/category_2/anbu-kumar/')
+ 4 APPPATH\Controllers\Workflow_Tools.php(125): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\writable\\uploads/tools_pdf/brand_3/category_2/anbu-kumar/', '1754983733_61a37434269e3c7da368.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:29:48 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:29:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:29:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:29:48 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:30:10 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:30:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:30:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:30:10 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:32:32 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:32:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:32:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:32:32 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:43:25 --> mysqli_sql_exception: Unknown column 'category_name' in 'where clause' in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-08-12 07:43:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:43:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:43:25 --> [Caused by] mysqli_sql_exception: Unknown column 'category_name' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = 1
+AND   (
+`category_name` LIKE \'%Dolores%\' ESCAPE \'!\'
+OR  `category_url` LIKE \'%Dolores%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tools_tbl`
+WHERE `flag` = :flag:
+AND   (
+`category_name` LIKE :category_name: ESCAPE \'!\'
+OR  `category_url` LIKE :category_url: ESCAPE \'!\'
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(37): CodeIgniter\Model->countAllResults(false)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 07:48:00 --> mysqli_sql_exception: Column 'tools_brochure' cannot be null in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(163): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#10 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-08-12 07:48:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Workflow_Tools.php(163): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:48:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tools 2\', \'tools-2\', \'sfg\', NULL, 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tools 2\', \'tools-2\', \'sfg\', NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Workflow_Tools.php(163): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 07:48:00 --> [Caused by] mysqli_sql_exception: Column 'tools_brochure' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tools 2\', \'tools-2\', \'sfg\', NULL, 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tools 2\', \'tools-2\', \'sfg\', NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (\'1\', \'1\', \'tools 2\', \'tools-2\', \'sfg\', NULL, 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`brand_id`, `category_id`, `tools_name`, `tools_url`, `tools_description`, `tools_brochure`, `flag`) VALUES (:brand_id:, :category_id:, :tools_name:, :tools_url:, :tools_description:, :tools_brochure:, :flag:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Workflow_Tools.php(163): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->insertTools()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 09:27:29 --> Error: Class "App\Controllers\ToolsImgModel" not found
+in APPPATH\Controllers\Workflow_Tools.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->getTools()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 10:42:43 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 217.
+ 1 APPPATH\Controllers\Workflow_Tools.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 10:42:45 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 217.
+ 1 APPPATH\Controllers\Workflow_Tools.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-08-12 11:12:12 --> mysqli_sql_exception: Column 'category_id' cannot be null in C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\app\Controllers\Workflow_Tools.php(316): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(941): App\Controllers\Workflow_Tools->deleteTools()
+#10 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+#11 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\projects\codeigniter\jaquar_admin\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-08-12 11:12:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'category_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (:category_id:, :flag:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Workflow_Tools.php(316): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->deleteTools()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:12:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'category_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (:category_id:, :flag:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Workflow_Tools.php(316): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->deleteTools()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:12:12 --> [Caused by] mysqli_sql_exception: Column 'category_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tools_tbl` (`category_id`, `flag`) VALUES (:category_id:, :flag:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Workflow_Tools.php(316): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->deleteTools()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:26:31 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:28:27 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:29:01 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:34:41 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:34:42 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:34:42 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-08-12 11:34:42 --> ErrorException: Undefined array key "category_url"
+in APPPATH\Controllers\Workflow_Tools.php on line 219.
+ 1 APPPATH\Controllers\Workflow_Tools.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_url"', 'C:\\xampp\\htdocs\\projects\\codeigniter\\jaquar_admin\\app\\Controllers\\Workflow_Tools.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Tools->updateTools()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Tools))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

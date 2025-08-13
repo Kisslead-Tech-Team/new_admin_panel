@@ -3,25 +3,26 @@ const ERROR_STATUS = JSON.stringify({
     msg: "Something went wrong!"
 });
 
-// function GET({module}){
-//     return $.ajax({
-//         type: "GET",
-//         url: base_url + 'get' + module,
-//         dataType: "json",
-//         success: function (response) {
 
-//             if(response.code == 200){
-//                 return JSON.parse(response.data)
-//             }
-//             return ERROR_STATUS;
-//         },
-//         error: function (err) {
-//           console.log("Error :" + err);
-//         },
-//     });
-// }
+function GET({module, type=null}) {
 
-function GET({module}) {
+    if(type){
+         return new Promise((resolve, reject) => {
+        $.ajax({
+            type: "GET",
+            url: base_url + 'getoption' + module,
+            dataType: "json",
+            success: function (response) {
+           
+                    resolve((response));
+                
+            },
+            error: function (err) {
+                reject(err);
+            },
+        });
+    }); 
+    }
 
     
     return new Promise((resolve, reject) => {
@@ -30,11 +31,9 @@ function GET({module}) {
             url: base_url + 'get' + module,
             dataType: "json",
             success: function (response) {
-                if(response.code == 200){
-                    resolve(JSON.parse(response.data));
-                } else {
-                    resolve(ERROR_STATUS);
-                }
+           
+                    resolve((response));
+                
             },
             error: function (err) {
                 reject(err);
@@ -56,11 +55,7 @@ function POST({module, module_id, data}){
                 data: { id: module_id },
                 dataType: "json",
                 success: function (response) {
-                    if(response.code == 200){
-                        resolve(JSON.parse(response.data));
-                    } else {
-                        resolve(ERROR_STATUS);
-                    }
+                    resolve(response); 
                 },
                 error: function (err) {
                     reject(err);
@@ -70,67 +65,85 @@ function POST({module, module_id, data}){
 
 
     }
-    return $.ajax({
-        type: "POST",
-        url: base_url + 'insert' + module,
-        data: data,
+
+
+       return new Promise((resolve, reject) => {
+        $.ajax({
+            type: "POST",
+            url: base_url + 'insert' + module,
+             data: data,
         dataType: "json",
         cache : false,
         processData: false,
         contentType: false,
-        success: function (response) {
-            if(response){
-                return $.parseJSON(response)
-            }
-            return ERROR_STATUS;
-        },
-        error: function (err) {
-        console.log(err);
-        },
+            success: function (response) {
+                resolve(response); 
+            },
+            error: function (err) {
+                reject(err);
+            },
+        });
     });
+
 
 }
 
 function PUT({module, data}){
-    return $.ajax({
-        type: "POST",
-        url: base_url + 'update' + module,
-        data: data,
+
+
+         return new Promise((resolve, reject) => {
+        $.ajax({
+            type: "POST",
+            url: base_url + 'update' + module,
+     data: data,
         dataType: "json",
         cache : false,
         processData: false,
         contentType: false,
-        success: function (response) {
-            if(response){
-
-                
-                return $.parseJSON(response)
-            }
-            return ERROR_STATUS;
-        },
-        error: function (err) {
-            console.log(err);
-        },
+            success: function (response) {
+              resolve(response); 
+            },
+            error: function (err) {
+                reject(err);
+            },
+        });
     });
+
+
 }
 
-function DELETE({module, data}){
+function DELETE({module, data, type=null}){
 
-    console.log(data);
-    
-    return $.ajax({
-        type: "POST",
-        url: base_url + 'delete' + module,
-        data: data,
-        dataType: "json",
-        success: function (response) {
-            if(response){
-                return $.parseJSON(response)
-            }
-            return ERROR_STATUS;
-        },
-        error: function (err) {
-            console.log(err);
-        },
+    if(type == 'imageDelete'){
+          return new Promise((resolve, reject) => {
+        $.ajax({
+            type: "POST",
+            url: base_url + 'deleteimage' + module,
+             data: data,
+            dataType: "json",
+            success: function (response) {
+                resolve(response); 
+            },
+            error: function (err) {
+                reject(err);
+            },
+        });
+    });
+    }
+
+   return new Promise((resolve, reject) => {
+        $.ajax({
+            type: "POST",
+            url: base_url + 'delete' + module,
+             data: data,
+            dataType: "json",
+            success: function (response) {
+                resolve(response); 
+            },
+            error: function (err) {
+                reject(err);
+            },
+        });
     });
 }
+   

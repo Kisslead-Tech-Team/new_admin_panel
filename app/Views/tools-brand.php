@@ -43,7 +43,7 @@
                                             <tr>
                                                 <th>S.No</th>
                                                 <th>Brand Name</th>
-                                                <th>Url</th>
+                                                <th>URL</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>

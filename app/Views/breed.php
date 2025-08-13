@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <!-- TITLE -->
-<title>Breed</title>
-<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+<title>Category</title>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+    data-menu-styles="dark" data-toggled="close">
 
 <?php require ('components/head.php') ?>
 
@@ -29,10 +30,8 @@
                     <div class="col-xl-12">
                         <div class="card custom-card">
                             <div class="card-header">
-                                <a 
-                                    id="add_breed"
-                                    class="btn btn-end btn-outline-primary btn-wave d-sm-flex align-items-center justify-content-between"
-                                >
+                                <a id="add_breed"
+                                    class="btn btn-end btn-outline-primary btn-wave d-sm-flex align-items-center justify-content-between">
                                     Add Breed
                                 </a>
                             </div>
@@ -61,7 +60,8 @@
     </div>
     </div>
 
-    <div class="modal fade bs-example-modal-lg" id="popup-modal" tabindex="-1" role="dialog" aria-labelledby="breedModelTitle" aria-hidden="true">
+    <div class="modal fade bs-example-modal-lg" id="popup-modal" tabindex="-1" role="dialog"
+        aria-labelledby="breedModelTitle" aria-hidden="true">
         <div class="modal-dialog  modal-lg  modal-dialog-">
             <div class="modal-content">
                 <div class="modal-header">
@@ -69,58 +69,56 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <form id="breed-form">
+                    <form id="breed-form">
                         <div class="container">
                             <div class="row">
 
-                            <div class="col-lg-12 mt-3">
-                                <div class="form-floating">
-                                <select class="form-select" id="breed-pet-select" aria-label="Floating label select example" name="pet_id">
-                                <option value="">Select a pet</option>
+                                <div class="col-lg-12 mt-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="breed-pet-select"
+                                            aria-label="Floating label select example" name="pet_id">
+                                            <option value="">Select a pet</option>
 
-                                 
-                                </select>
-                                <label for="breed-pet-select"><span class='text-danger'>*</span>Pet Name</label>
-                                </div>
-                  
+
+                                        </select>
+                                        <label for="breed-pet-select"><span class='text-danger'>*</span>Pet Name</label>
+                                    </div>
+
                                 </div>
 
                                 <div class="col-lg-12 mt-3">
                                     <div class="form-floating mb-4 floating">
-                                        <input
-                                            class="form-control prodbreed_nameuct_name" 
-                                            id="breed_name"
-                                            placeholder="Enter the product name" 
-                                            name="breed_name"
-                                        >
+                                        <input class="form-control prodbreed_nameuct_name" id="breed_name"
+                                            placeholder="Enter the product name" name="breed_name">
                                         <label for="breed_name"><span class='text-danger'>*</span> Breed Name</label>
                                         <span class="error text-danger mt-5 breed_name"></span>
                                     </div>
                                 </div>
 
-                       
+
 
                             </div>
-                </div> <br><br>
-                <div class="mb-3 d-flex justify-content-end">
-                    <a class="btn btn-success" id="btn-submit">Submit</a>
+                        </div> <br><br>
+                        <div class="mb-3 d-flex justify-content-end">
+                            <a class="btn btn-success" id="btn-submit">Submit</a>
+
+                        </div>
+
+                        </hr>
+                    </form>
 
                 </div>
 
-                </hr>
-                </form>
-
             </div>
-
         </div>
-    </div>
 
     </div>
 
 
 
     <!-- View Details Modal -->
-    <div class="modal fade bs-example-modal-lg" id="model-view" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade bs-example-modal-lg" id="model-view" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-lg  modal-dialog-">
             <div class="modal-content">
                 <div class="modal-header">

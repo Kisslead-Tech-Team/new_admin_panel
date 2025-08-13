@@ -4,10 +4,6 @@ namespace App\Controllers;
 
 class BaseAction extends BaseController
 {
-
-
-
-    
     public function index()
     {
         if (sessionCheck()) {
@@ -28,10 +24,27 @@ class BaseAction extends BaseController
         return view('tools-brand');
     }
 
-    public function breed()
+    public function toolsCategory()
     {
-        return view('breed');
+        return view('tools-category');
     }
 
-    
+    public function tools()
+    {
+        return view('tools');
+    }
+
+      public function gallery()
+    {
+        return view('gallery');
+    }
+       public function youtube()
+    {
+        return view('youtube');
+    }
+
+       public function enquiries()
+    {
+        return view('enquiries');
+    }
 }

@@ -49,3 +49,7 @@
 
 <!-- HTTP UTIL JS -->
 <script src="<?= base_url() ?>assets/custom/js/util/http_util.js"></script>
+
+<script>
+    var baseUrl = "<?= base_url() ?>";
+</script>

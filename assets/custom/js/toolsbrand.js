@@ -30,6 +30,10 @@ $("#btn-submit").on('click', function () {
 
   let formObjectNew = [
 
+    {
+      value: $("#brand_name").val(),
+      error: "Please enter Brand Name !"
+    },
 
     {
       value: $("#brand_name").val(),
@@ -39,6 +43,11 @@ $("#btn-submit").on('click', function () {
   ]
 
   let formObjectUpdate = [
+    
+    {
+      value: $("#brand_name").val(),
+      error: "Please enter Brand Name !"
+    },
     {
       value: $("#brand_name").val(),
       error: "Special characters not allowed"
@@ -65,6 +74,7 @@ $(document).on("click", ".btnEdit", function () {
   mode = 'edit';
   let index = $(this).attr("id");
 
+
   brand_id = masterData[index][module + '_id']
   cleanPoup();
 
@@ -78,14 +88,25 @@ $(document).on("click", ".btnEdit", function () {
 
 //===[ Insert Brand Data ]===
 function insertBrandData() {
-
   let data = getFormData();
   data.append("url", url);
+
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
-    refreshDetails();
-  });
 
+    // Clear 'start' and 'page' from URL
+    const params = new URLSearchParams(window.location.search);
+    params.delete('start');
+    const newQuery = params.toString();
+    const newUrl = newQuery ? `${location.pathname}?${newQuery}` : location.pathname;
+    window.history.replaceState({}, '', newUrl);
+
+    // Reset DataTable to first page & reload
+    table.page(0).draw(false);
+
+    // Hide modal if open
+    $("#popup-modal").modal("hide");
+  });
 }
 
 //===[ Update Brand Data ]===
@@ -102,79 +123,117 @@ function updateBrandData() {
   });
 }
 
-//====[ Get All Brand Data ]===
-function getBrandDetails() {
-  GET({ module }).then((data) => {
-    masterData = (data);
 
-    displayBrandDetails(masterData);
-  });
+let table; // global
+
+function getPageStartFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return parseInt(params.get('start') || 0, 10);
 }
 
-//===[ Display Brand details]===
-function displayBrandDetails(tableData) {
+function getSearchFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('search') || '';
+}
 
-  console.log(tableData);
-  
-
-
-  //===[Destroy Data Table]===
+function getBrandDetails() {
   if ($.fn.DataTable.isDataTable('#datatable')) {
-    $('#datatable').DataTable().destroy();
+    table.ajax.reload(null, false);
+    return;
   }
 
-  $('#datatable tbody').empty();
+  table = $('#datatable').DataTable({
+    processing: true,
+    serverSide: true,
+    pageLength: 10,
+    ordering: false,
+    displayStart: getPageStartFromURL(),
+    search: { search: getSearchFromURL() },
 
+    ajax: function (data, callback) {
+      const params = new URLSearchParams();
+      params.set('start', data.start);
+      params.set('length', data.length);
+      params.set('draw', data.draw);
+      params.set('search', data.search.value);
 
-  if (typeof tableData === 'string') {
+      const moduleWithParams = module + '?' + params.toString();
 
-    $('#datatable').dataTable({
-      "oLanguage": {
-        "sEmptyTable": "Brand table is empty"
-      }
-    });
+      GET({ module: moduleWithParams })
+        .then((res) => {
+          if (res.code === 200) {
+            masterData = res.data.data;
+            
+            callback({
+              draw: data.draw,
+              recordsTotal: res.data.recordsTotal,
+              recordsFiltered: res.data.recordsFiltered,
+              data: res.data.data
+            });
+          } else {
+            callback({
+              draw: data.draw,
+              recordsTotal: 0,
+              recordsFiltered: 0,
+              data: []
+            });
+          }
+        })
+        .catch(() => {
+          callback({
+            draw: data.draw,
+            recordsTotal: 0,
+            recordsFiltered: 0,
+            data: []
+          });
+        });
+    },
 
+ columns: [
+  {
+    data: null,
+    render: function (data, type, row, meta) {
+      return meta.row + meta.settings._iDisplayStart + 1;
+    }
+  },
+  { data: "brand_name" },
+  { data: "url" },
+  {
+    data: null,
+    render: function (data, type, row, meta) {
+      return `
+        <a id="${meta.row}" class="btn btnEdit text-info fs-14 lh-1"><i class="ri-edit-line"></i></a>
+        <a id="${meta.row}" class="btn BtnDelete text-danger fs-14 lh-1"><i class="ri-delete-bin-5-line"></i></a>
+      `;
+    }
   }
-  else {
+]
 
-    $("#datatable").DataTable({
-      destroy: true,
-      aaSorting: [],
-      aaData: tableData,
-      aoColumns: [
-        {
-          mDataProp: null,
-          render: function (data, type, row, meta) {
-            return meta.row + 1;
-          },
-        },
-        {
-          mDataProp: "brand_name",
-        },
-        {
-          mDataProp: "url",
-        },
+  });
 
-        {
-          mDataProp: function (data, type, full, meta) {
-            return (
-              `<a id="${meta.row}" class="btn btnEdit text-info fs-14 lh-1"> <i class="ri-edit-line"></i></a>
-            <a id="${meta.row}" class="btn BtnDelete text-danger fs-14 lh-1"> <i class="ri-delete-bin-5-line"></i></a>`
-            );
-          },
-        },
-      ],
-    });
+  // Update URL on page or search change
+  table.on('page.dt search.dt', function () {
+    const info = table.page.info();
+    const searchTerm = table.search();
+    const params = new URLSearchParams(window.location.search);
 
-  }
+    params.set('start', info.start);
+
+    if (searchTerm) {
+      params.set('search', searchTerm);
+    } else {
+      params.delete('search');
+    }
+
+    const newUrl = `${location.pathname}?${params.toString()}`;
+    window.history.replaceState({}, '', newUrl);
+  });
 }
 
 //===[Delete Data]===
 $(document).on("click", ".BtnDelete", function () {
-
   let index = $(this).attr("id");
-  mode = "delete";
-  brand_id = masterData[index][module + '_id'];
+  let brand_id = masterData[index][module + '_id'];
 
   Swal.fire({
     title: "Alert!",
@@ -186,14 +245,36 @@ $(document).on("click", ".BtnDelete", function () {
     confirmButtonText: "Yes, delete it!",
   }).then((result) => {
     if (result.isConfirmed) {
-
       DELETE({ module, data: { brand_id } }).then((response) => {
         SWAL_HANDLER(response);
-        refreshDetails();
+
+        // After deletion, reload the table and check page state
+        const info = table.page.info();
+
+        // If current page has only one record (which will be deleted),
+        // and it's not the first page, move to previous page
+        if (info.end - info.start === 1 && info.page > 0) {
+          table.page(info.page - 1).draw(false);
+
+          // Update URL: remove or adjust 'start' param accordingly
+          const params = new URLSearchParams(window.location.search);
+          let newStart = (info.start - info.length);
+          if (newStart <= 0) {
+            params.delete('start');
+          } else {
+            params.set('start', newStart);
+          }
+          window.history.replaceState({}, '', `${location.pathname}?${params.toString()}`);
+
+        } else {
+          // Otherwise, just reload current page
+          table.ajax.reload(null, false);
+        }
       });
     }
   });
 });
+
 
 $(document).on('change', '#navbar_title_id', function () {
 
@@ -210,7 +291,7 @@ $(document).on('change', '#navbar_title_id', function () {
       $('#navbar_page_id').html('<option value="">Select</option>' + data);
     },
     error: function () {
-      console.log("Error");
+      console.error("Error");
     },
   });
 })
