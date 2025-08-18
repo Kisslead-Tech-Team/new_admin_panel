@@ -90,6 +90,8 @@ $(document).on("click", ".btnEdit", function () {
 function insertGalleryData() {
   let data = getFormData();
 
+  showLoader();
+
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
@@ -105,7 +107,9 @@ function insertGalleryData() {
 
     // Hide modal if open
     $("#popup-modal").modal("hide");
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 //===[ Update Gallery Data ]===
@@ -114,11 +118,15 @@ function updateGalleryData() {
 
   let data = getFormData();
   data.append("gallery_id", gallery_id);
+
+  showLoader();
   PUT({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
     refreshDetails();
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 

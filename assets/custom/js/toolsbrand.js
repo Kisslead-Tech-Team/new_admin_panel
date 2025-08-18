@@ -90,7 +90,7 @@ $(document).on("click", ".btnEdit", function () {
 function insertBrandData() {
   let data = getFormData();
   data.append("url", url);
-
+showLoader();
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
@@ -106,7 +106,9 @@ function insertBrandData() {
 
     // Hide modal if open
     $("#popup-modal").modal("hide");
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 //===[ Update Brand Data ]===
@@ -116,11 +118,14 @@ function updateBrandData() {
   let data = getFormData();
   data.append("brand_id", brand_id);
   data.append("url", url);
+  showLoader();
   PUT({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
     refreshDetails();
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 

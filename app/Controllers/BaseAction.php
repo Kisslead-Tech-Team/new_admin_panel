@@ -47,4 +47,10 @@ class BaseAction extends BaseController
     {
         return view('enquiries');
     }
+
+
+    public function orders()
+    {
+        return view('orders');
+    }
 }

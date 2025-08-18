@@ -150,3 +150,12 @@ function SWAL_HANDLER({ code, msg }) {
 function CAPITALIZE(string) {
   return string[0].toUpperCase() + string.slice(1)
 }
+
+
+function showLoader() {
+    $("#loader-overlay").show();
+}
+
+function hideLoader() {
+    $("#loader-overlay").hide();
+}

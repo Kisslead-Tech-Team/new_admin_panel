@@ -23,6 +23,7 @@ $routes->get('tools', 'BaseAction::tools');
 $routes->get('gallery', 'BaseAction::gallery');
 $routes->get('youtube', 'BaseAction::youtube');
 $routes->get('enquiries', 'BaseAction::enquiries');
+$routes->get('orders', 'BaseAction::orders');
 
 
 
@@ -76,3 +77,8 @@ $routes->post('deleteyoutube', 'Workflow_Youtube::deleteYoutube');
 # enquiries
 $routes->get('getenquiries', 'Workflow_Enquiries::getEnquiries');
 $routes->post('deleteenquiries', 'Workflow_Enquiries::deleteEnquiries');
+
+# orders
+$routes->get('getorders', 'Workflow_Orders::getOrders');
+$routes->post('updateorders', 'Workflow_Orders::updateOrders');
+$routes->post('deleteorders', 'Workflow_Orders::deleteOrders');

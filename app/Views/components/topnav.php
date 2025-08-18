@@ -91,3 +91,20 @@
 
 </header>
 <!-- END HEADER -->
+
+
+<!-- Loader Overlay -->
+<div id="loader-overlay" style="
+    display:none;
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(255,255,255,0.7);
+    z-index:9999;
+    text-align:center;
+    padding-top:20%;
+    font-size:20px;
+">
+    <div class="spinner-border text-primary" role="status"></div>
+    <div>Processing...</div>
+</div>

@@ -17,7 +17,7 @@ class App extends BaseConfig
      * E.g., http://example.com/
      */
     public string $baseURL = 'http://localhost/projects/codeigniter/jaquar_admin';
-    // public string $baseURL = 'https://svconstructionsandinteriors.in/petz/admin';
+    // public string $baseURL = 'https://adminjaquar.bharatmakers.com/';
 
 
     // https://svconstructionsandinteriors.in/petz/

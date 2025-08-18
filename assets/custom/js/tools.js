@@ -214,7 +214,7 @@ function populateToolImages(images) {
 function insertToolsData() {
   let data = getFormData();
   data.append("tools_url", tools_url);
-
+showLoader();
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
@@ -230,7 +230,9 @@ function insertToolsData() {
 
     // Hide modal if open
     $("#popup-modal").modal("hide");
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 //===[ Update Tools Data ]===
@@ -240,11 +242,14 @@ function updateToolsData() {
   let data = getFormData();
   data.append("tools_id", tools_id);
   data.append("tools_url", tools_url);
+  showLoader();
   PUT({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
     refreshDetails();
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 function getOptions() {
@@ -254,7 +259,7 @@ function getOptions() {
   ]).then(([brandRes, categoryRes]) => {
     brandData = brandRes.data;
     categoryData = categoryRes.data;
-  });
+  })
 }
 
 let table; // global
@@ -485,7 +490,6 @@ function cleanPoup() {
   $('#tools_image_container').empty();
   $('#pdfwrapper').html('');
   $('#tools_ex_image_container').empty(); // Clear old images
-
 
 }
 

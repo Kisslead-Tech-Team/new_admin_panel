@@ -141,3 +141,6 @@
 #--------------------------------------------------------------------
 
 # curlrequest.shareOptions = false
+app.sessionDriver = CodeIgniter\Session\Handlers\FileHandler
+app.sessionSavePath = writable/session
+app.sessionExpiration = 7200 

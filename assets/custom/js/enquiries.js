@@ -9,6 +9,40 @@ $(document).ready(function () {
 
 });
 
+$('#export_enquiries').on('click', function () {
+
+    GET({ module: module })
+        .then((res) => {
+          
+            if (res.code === 200 && res.data.data.length > 0) {
+
+                let exportData = res.data.data;
+
+                console.log(exportData);
+                
+
+                // Create worksheet from array of objects
+                let worksheet = XLSX.utils.json_to_sheet(exportData);
+
+                // Create workbook and append sheet
+                let workbook = XLSX.utils.book_new();
+                XLSX.utils.book_append_sheet(workbook, worksheet, "Enquiries");
+
+                // Trigger Excel file download
+                XLSX.writeFile(workbook, 'enquiries_export.xlsx');
+                showToast(200, "Enquiries data downloaded!");
+
+            } else {
+                    showToast(300, "No enquiries data available for export.");
+
+            }
+        })
+       .catch(() => {
+              showToast(400, "Error fetching enquiries data.");
+
+        });
+        
+});
 
 let table; // global
 

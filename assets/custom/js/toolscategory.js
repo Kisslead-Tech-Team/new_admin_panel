@@ -89,7 +89,7 @@ $(document).on("click", ".btnEdit", function () {
 function insertCategoryData() {
   let data = getFormData();
   data.append("category_url", category_url);
-
+showLoader();
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
@@ -105,24 +105,29 @@ function insertCategoryData() {
 
     // Hide modal if open
     $("#popup-modal").modal("hide");
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 //===[ Update Category Data ]===
 function updateCategoryData() {
 
-  console.log(category_id);
+
   
 
 
   let data = getFormData();
   data.append("category_id", category_id);
   data.append("category_url", category_url);
+  showLoader();
   PUT({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
     refreshDetails();
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 

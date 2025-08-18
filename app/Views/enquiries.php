@@ -31,7 +31,7 @@
                     <div class="col-xl-12">
                         <div class="card custom-card">
                             <div>
-                               <button id="export_gallery" type="button"class="btn btn-success btn-wave d-sm-flex align-items-center justify-content-between m-2"> Export Gallery</button>
+                               <button id="export_enquiries" type="button"class="btn btn-success btn-wave d-sm-flex align-items-center justify-content-between m-2"> Export Enquiries</button>
 
                                </div>
                             <div class="card-body">
@@ -67,8 +67,9 @@
     </div>
     <?php require ('components/footer.php') ?>
 
+<script src="<?= base_url() ?>assets/build/assets/libs/xlsx.full.min.js" ></script>
 
-    <script src="<?= base_url() ?>assets/custom/js/enquiries.js"></script>
+<script src="<?= base_url() ?>assets/custom/js/enquiries.js" ></script>
 
 </body>
 

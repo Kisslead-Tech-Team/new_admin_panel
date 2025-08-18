@@ -88,7 +88,7 @@ $(document).on("click", ".btnEdit", function () {
 //===[ Insert youtube Data ]===
 function insertYoutubeData() {
   let data = getFormData();
-
+showLoader();
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
@@ -104,7 +104,9 @@ function insertYoutubeData() {
 
     // Hide modal if open
     $("#popup-modal").modal("hide");
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 //===[ Update youtube Data ]===
@@ -113,11 +115,14 @@ function updateYoutubeData() {
 
   let data = getFormData();
   data.append("youtube_id", youtube_id);
+  showLoader();
   PUT({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
     refreshDetails();
-  });
+  }).finally(() => {
+        hideLoader(); // 🔹 hide loader after response (success or error)
+    });
 }
 
 
