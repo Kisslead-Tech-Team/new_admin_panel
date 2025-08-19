@@ -328,6 +328,8 @@ function getFormData() {
 
 function cleanPoup() {
   $('#brand-form')[0].reset();
+    $('#logo_path_url').hide();
+
 }
 
 function refreshDetails() {
