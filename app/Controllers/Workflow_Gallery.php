@@ -57,8 +57,6 @@ public function getGallery()
     ]);
 }
 
-
-
 public function insertGallery()
 {
 

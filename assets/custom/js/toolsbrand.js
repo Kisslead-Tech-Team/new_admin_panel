@@ -38,6 +38,10 @@ $("#btn-submit").on('click', function () {
     {
       value: $("#brand_name").val(),
       error: "Special characters not allowed"
+    },
+    {
+      value: $("#logo_path").val(),
+      error: "Please Upload Logo !"
     }
 
   ]
@@ -81,6 +85,10 @@ $(document).on("click", ".btnEdit", function () {
   $('#brandModelTitle').html('Edit Brand');
   $("#brand_name").val(masterData[index].brand_name);
   $("#url").val(masterData[index].url);
+   if (masterData[index].logo_path) {
+    $("#logo_path_url").attr('src', masterData[index].logo_path);
+    $("#logo_path_url").show();
+  }
 
 
   $("#popup-modal").modal("show");
@@ -90,7 +98,7 @@ $(document).on("click", ".btnEdit", function () {
 function insertBrandData() {
   let data = getFormData();
   data.append("url", url);
-showLoader();
+  showLoader();
   POST({ module, data }).then((response) => {
     SWAL_HANDLER(response);
 
@@ -203,6 +211,15 @@ function getBrandDetails() {
   },
   { data: "brand_name" },
   { data: "url" },
+    {
+        data: "logo_path",
+        render: function (data, type, row) {
+          if (!data) {
+            return '<span class="text-muted">No image</span>';
+          }
+          return `<img src="${baseUrl + data}" alt="Gallery Image" style="width:100px;height:auto;border-radius:4px;">`;
+        }
+      },
   {
     data: null,
     render: function (data, type, row, meta) {
@@ -299,7 +316,11 @@ $(document).on('change', '#navbar_title_id', function () {
       console.error("Error");
     },
   });
-})
+});
+
+$(document).on("change", "#logo_path", function () {
+  DISPLAY_IMAGE(this, "logo_path_url");
+});
 
 function getFormData() {
   return new FormData($("#brand-form")[0]);

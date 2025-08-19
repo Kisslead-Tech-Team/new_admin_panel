@@ -78,34 +78,39 @@
                                     <div class="form-floating mb-4 floating">
                                         <input class="form-control gallery_name" id="gallery_name"
                                             placeholder="Enter the gallery name" name="gallery_name">
-                                        <label for="gallery_name"><span class='text-danger'>*</span> Gallery Name</label>
+                                        <label for="gallery_name"><span class='text-danger'>*</span> Gallery
+                                            Name</label>
                                         <span class="error text-danger mt-5 gallery_name"></span>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 mt-3">
                                     <div>
-                                        <label for="gallery_img" class="form-label"><span class='text-danger'>*</span> Gallery Image &nbsp;
-                                            <span class="text text-success text-small">AllowedFiles : png,jpeg,jpg [1080 x 1440px]</span>
+                                        <label for="gallery_img" class="form-label"><span class='text-danger'>*</span>
+                                            Gallery Image &nbsp;
+                                            <span class="text text-success text-small">AllowedFiles : png,jpeg,jpg [1080
+                                                x 1440px]</span>
                                         </label>
-                                    <div>
-                                    <input class="form-control" type="file" id="gallery_img" name="gallery_img" accept="image/png, image/jpeg, image/jpg, image/webp" >
+                                        <div>
+                                            <input class="form-control" type="file" id="gallery_img" name="gallery_img"
+                                                accept="image/png, image/jpeg, image/jpg, image/webp">
 
-                                    <img src="" id="gallery_image_url" alt="image" width="130px" style="padding-top: 15px; display:none;">
+                                            <img src="" id="gallery_image_url" alt="image" width="130px"
+                                                style="padding-top: 15px; display:none;">
 
-                                    <span class="error text-danger gallery_img mt-5"></span>
+                                            <span class="error text-danger gallery_img mt-5"></span>
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
 
+                                <div class="mt-3 d-flex justify-content-end align-items-end">
+                                    <a class="btn btn-success" id="btn-submit">Submit</a>
+                                </div>
 
-
-                            </div>
-                        </div>
-
-                        <div class="mt-3 d-flex justify-content-end align-items-end">
-                            <a class="btn btn-success" id="btn-submit">Submit</a>
-                        </div>
-
-                        </hr>
+                                </hr>
                     </form>
 
                 </div>

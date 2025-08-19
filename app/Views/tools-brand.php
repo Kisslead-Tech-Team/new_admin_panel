@@ -44,6 +44,7 @@
                                                 <th>S.No</th>
                                                 <th>Brand Name</th>
                                                 <th>URL</th>
+                                                <th>Logo</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -82,7 +83,24 @@
                                         <span class="error text-danger mt-5 brand_name"></span>
                                     </div>
                                 </div>
+                                <div class="col-lg-12 mt-3">
+                                    <div>
+                                        <label for="logo_path" class="form-label"><span class='text-danger'>*</span>
+                                            Brand Logo &nbsp;
+                                            <span class="text text-success text-small">AllowedFiles : png,jpeg,jpg,webp [1080
+                                                x 1440px]</span>
+                                        </label>
+                                        <div>
+                                            <input class="form-control" type="file" id="logo_path" name="logo_path"
+                                                accept="image/png, image/jpeg, image/jpg, image/webp">
 
+                                            <img src="" id="logo_path_url" alt="image" width="130px"
+                                                style="padding-top: 15px; display:none;">
+
+                                            <span class="error text-danger logo_path mt-5"></span>
+                                        </div>
+                                    </div>
+                                </div>
 
 
 

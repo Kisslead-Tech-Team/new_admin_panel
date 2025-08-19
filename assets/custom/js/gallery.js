@@ -316,6 +316,7 @@ $(document).on('change', '#navbar_title_id', function () {
 function getFormData() {
   return new FormData($("#gallery-form")[0]);
 }
+
 $(document).on("change", "#gallery_img", function () {
   DISPLAY_IMAGE(this, "gallery_image_url");
 });

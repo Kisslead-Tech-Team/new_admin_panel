@@ -8,6 +8,7 @@ class ToolsBrandModel extends Model{
     protected $allowedFields = [
         'brand_name',
         'url',
+        'logo_path',
         'flag'
     ];
 }
